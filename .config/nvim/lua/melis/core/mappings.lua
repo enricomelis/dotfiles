@@ -3,10 +3,10 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
-keymap.set("n", "<leader>x", "<cmd>bd<CR>", { desc = "Close current buffer" })
+-- keymap.set("n", "<leader>x", "<cmd>bd<CR>", { desc = "Close current buffer" })
 
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" })
-keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) 
+keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 -- increment and decrement numbers
 
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
@@ -29,5 +29,3 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
 -- <C-d> and <C-U> also keep the cursor centered
-
-
