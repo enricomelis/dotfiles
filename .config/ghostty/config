@@ -1,5 +1,5 @@
-theme = gruvbox-material-hard-dark
-font-family = MesloLGS Nerd Font Mono
+theme = tokyonight
+font-family =  JetBrainsMono Nerd Font
 font-size = 20
 
 background-opacity = 0.8
