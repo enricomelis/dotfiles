@@ -1,3 +1,4 @@
+-- BUG: weird horizontal line showing when opening nvim 
 return {
   "goolord/alpha-nvim",
   event = "VimEnter",
