@@ -3,7 +3,7 @@ local map = vim.keymap.set
 map("n", "<leader>net", ":Ex<CR>")
 
 map("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
--- map("n", "<leader>x", "<cmd>bd<CR>", { desc = "Close current buffer" })
+map("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close current buffer" })
 
 map("n", "<leader>+", "<C-a>", { desc = "Increment number" })
 map("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
