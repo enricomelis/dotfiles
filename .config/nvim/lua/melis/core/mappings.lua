@@ -1,4 +1,3 @@
-
 vim.g.mapleader = " "
 local map = vim.keymap.set
 map("n", "<leader>net", ":Ex<CR>")
@@ -30,3 +29,5 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
 -- <C-d> and <C-U> also keep the cursor centered
+
+map("n", "<leader>l", ":Lazy<CR>")
