@@ -22,7 +22,6 @@ return {
 				"pyright",
 				"eslint",
 				"clangd",
-				"codelldb",
 			},
 		},
 		dependencies = {
