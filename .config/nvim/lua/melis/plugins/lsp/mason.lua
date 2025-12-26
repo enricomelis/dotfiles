@@ -23,6 +23,11 @@ return {
 				"eslint",
 				"clangd",
 			},
+			-- 	automatic_enable = {
+			-- 		exclude = {
+			-- 			"jdtls",
+			-- 		},
+			-- 	},
 		},
 		dependencies = {
 			{
