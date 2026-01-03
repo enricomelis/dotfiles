@@ -15,7 +15,8 @@ return {
 		opts = {
 			-- list of servers for mason to install
 			ensure_installed = {
-				"ts_ls",
+				"vtsls",
+				"vue_ls",
 				"html",
 				"cssls",
 				"lua_ls",
@@ -55,6 +56,8 @@ return {
 				"black", -- python formatter
 				"pylint",
 				"eslint_d",
+				"vue-language-server", -- Vue language server package (used by vue_ls)
+				"vtsls", -- TypeScript language server with Vue plugin support
 			},
 		},
 		dependencies = {

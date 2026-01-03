@@ -48,6 +48,26 @@ return {
 				{ name = "path" },
 			}),
 
+			entry_filter = function(entry, ctx)
+				local completion_item = entry:get_completion_item()
+				if not completion_item then
+					return true
+				end
+
+				local label = completion_item.label or ""
+				local insert_text = completion_item.insertText or ""
+
+				if label:lower():match("^import") or insert_text:lower():match("^import") then
+					return false
+				end
+
+				if completion_item.kind == 18 or completion_item.kind == 9 then
+					return false
+				end
+
+				return true
+			end,
+
 			formatting = {
 				-- This is the modified formatting logic
 				format = function(entry, item)

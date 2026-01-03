@@ -12,6 +12,8 @@ return {
       ts_config = {
         lua = { "string" }, -- don't add pairs in lua string treesitter nodes
         javascript = { "template_string" }, -- don't add pairs in javscript template_string treesitter nodes
+        html = false, -- don't check treesitter for HTML (handled by nvim-ts-autotag)
+        vue = false, -- don't check treesitter for Vue (handled by nvim-ts-autotag)
         java = false, -- don't check treesitter on java
       },
     })
