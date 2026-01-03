@@ -33,3 +33,14 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 eval "$(zoxide init zsh)"
 alias cd="z"
 alias ls="eza --icons=always"
+
+# bun completions
+[ -s "/Users/enricomelis/.bun/_bun" ] && source "/Users/enricomelis/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
