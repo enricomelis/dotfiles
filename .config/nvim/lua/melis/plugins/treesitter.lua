@@ -40,6 +40,7 @@
 				"c",
 				"java",
 				"vue",
+				"ocaml",
 			},
 			incremental_selection = {
 				enable = true,

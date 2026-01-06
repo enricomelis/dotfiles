@@ -58,6 +58,7 @@ return {
 				"eslint_d",
 				"vue-language-server", -- Vue language server package (used by vue_ls)
 				"vtsls", -- TypeScript language server with Vue plugin support
+				"ocamlformat", -- ocaml formatter
 			},
 		},
 		dependencies = {

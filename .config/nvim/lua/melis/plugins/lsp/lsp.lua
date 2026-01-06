@@ -43,8 +43,15 @@ return {
       filetypes = { 'vue' },
     })
 
+    -- Enable ocamllsp for OCaml support
+    vim.lsp.config("ocamllsp", {
+      filetypes = { 'ocaml', 'ocamlinterface', 'ocamllex', 'ocamlyacc' },
+      cmd = { vim.fn.expand("~/.opam/default/bin/ocamllsp") },
+    })
+
     -- Enable the servers
     vim.lsp.enable("vtsls")
     vim.lsp.enable("vue_ls")
+    vim.lsp.enable("ocamllsp")
   end,
 }
