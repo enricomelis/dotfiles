@@ -195,8 +195,13 @@ if.app-id = 'com.anthropic.claudefordesktop'
 run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
-if.app-id = 'net.whatsapp.WhatsApp'
+if.app-id = 'com.linear'
 run = "move-node-to-workspace 4"
+
+[[on-window-detected]]
+if.app-id = 'net.whatsapp.WhatsApp'
+check-further-callbacks = true
+run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
