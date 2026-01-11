@@ -43,6 +43,23 @@ return {
       filetypes = { 'vue' },
     })
 
+    -- Enable tailwindcss LSP for Tailwind CSS IntelliSense
+    vim.lsp.config("tailwindcss", {
+      filetypes = { 'html', 'css', 'scss', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'vue' },
+      settings = {
+        tailwindCSS = {
+          validate = true,
+          lint = {
+            invalidApply = 'error',
+            invalidVariant = 'warning',
+            invalidConfigPath = 'error',
+            invalidTailwindDirective = 'error',
+            recommendedVariantOrder = 'warning',
+          },
+        },
+      },
+    })
+
     -- Enable ocamllsp for OCaml support
     vim.lsp.config("ocamllsp", {
       filetypes = { 'ocaml', 'ocamlinterface', 'ocamllex', 'ocamlyacc' },
@@ -52,6 +69,7 @@ return {
     -- Enable the servers
     vim.lsp.enable("vtsls")
     vim.lsp.enable("vue_ls")
+    vim.lsp.enable("tailwindcss")
     vim.lsp.enable("ocamllsp")
   end,
 }

@@ -5,9 +5,9 @@ return {
 		opts = {
 			formatters_by_ft = {
 				lua = { "stylua" },
-				javascript = { "prettierd", "prettier", "eslint_d", stop_after_first = false },
-				typescript = { "prettierd", "prettier", "eslint_d", stop_after_first = false },
-				vue = { "prettierd", "prettier", "eslint_d", stop_after_first = false },
+				javascript = { "prettierd", "prettier", stop_after_first = true },
+				typescript = { "prettierd", "prettier", stop_after_first = true },
+				vue = { "prettierd", "prettier", stop_after_first = true },
 				markdown = { "prettier" },
 				json = { "prettier" },
 				html = { "prettier" },

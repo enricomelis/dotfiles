@@ -23,6 +23,7 @@ return {
 				"pyright",
 				"eslint",
 				"clangd",
+				"tailwindcss",
 			},
 			-- 	automatic_enable = {
 			-- 		exclude = {
