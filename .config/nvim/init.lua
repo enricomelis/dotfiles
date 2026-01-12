@@ -1,3 +1,2 @@
-require("melis.core")
-require("melis.lazy")
-require("melis.lsp")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
