@@ -4,6 +4,6 @@ font-size = 20
 
 background-opacity = 0.6
 background-blur = true
-macos-titlebar-style = tabs
+macos-titlebar-style = hidden
 
 working-directory = /Users/enricomelis/Desktop/
